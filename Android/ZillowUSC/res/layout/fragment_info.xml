@@ -1,0 +1,574 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abhi.usc.zillowcsci571.SubActivity$InfoFragment" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".LinearLayout" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="25dip" >
+
+            <TableLayout
+                android:id="@+id/table_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:verticalSpacing="24dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="40dp" >
+
+                    <TextView
+                        android:id="@+id/zillowInfo"
+                        android:paddingLeft="5dip"
+                        android:paddingTop="5dip"
+                        android:text="See more details on Zillow:" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical" >
+
+                        <Button
+                            android:id="@+id/share_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignWithParentIfMissing="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/fb"
+                            android:minHeight="25dp"
+                            android:paddingRight="15dp" />
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/propUrl"
+                        android:layout_height="match_parent"
+                        android:layout_span="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Some Link" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="0dp"
+                    android:background="#EAF7FC"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/propType"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Property Type" />
+
+                    <TextView
+                        android:id="@+id/propTypeV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/yearBuilt"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Year Built" />
+
+                    <TextView
+                        android:id="@+id/yearBuiltV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="0dp"
+                    android:background="#EAF7FC"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/lotSize"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Lot Size" />
+
+                    <TextView
+                        android:id="@+id/lotSizeV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/finArea"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Finished Area" />
+
+                    <TextView
+                        android:id="@+id/finAreaV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="0dp"
+                    android:background="#EAF7FC"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/bathroom"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Bathrooms" />
+
+                    <TextView
+                        android:id="@+id/bathroomV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/bedroom"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Bedrooms" />
+
+                    <TextView
+                        android:id="@+id/bedroomV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="0dp"
+                    android:background="#EAF7FC"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/taxAYear"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Tax Assessment Year" />
+
+                    <TextView
+                        android:id="@+id/taxAYearV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow10"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/taxA"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Tax Assessment" />
+
+                    <TextView
+                        android:id="@+id/taxAV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow11"
+                    android:layout_width="0dp"
+                    android:background="#EAF7FC"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/lsp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Last Sold Price" />
+
+                    <TextView
+                        android:id="@+id/lspV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow12"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/lsd"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="Last Sold Date" />
+
+                    <TextView
+                        android:id="@+id/lsdV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow13"
+                    android:layout_width="0dp"
+                    android:background="#EAF7FC"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/propEst"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxWidth="35dp"
+                        android:paddingLeft="5dip"
+                        android:text="Zestimate Property Estimate as of" />
+
+                    <TextView
+                        android:id="@+id/propEstV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow14"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/ovlChange"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="30 days Overall Change" />
+
+                    <TextView
+                        android:id="@+id/ovlChangeV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow15"
+                    android:layout_width="0dp"
+                    android:background="#EAF7FC"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/atpr"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="All Time Property Range" />
+
+                    <TextView
+                        android:id="@+id/atprV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow16"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/rentEst"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxWidth="35dp"
+                        android:paddingLeft="5dip"
+                        android:text="Rent Zestimate Valuation as of" />
+
+                    <TextView
+                        android:id="@+id/rentEstV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow17"
+                    android:layout_width="0dp"
+                    android:background="#EAF7FC"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/rentCh"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="30 Days Rent Change" />
+
+                    <TextView
+                        android:id="@+id/rentChV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+
+                <TableRow
+                    android:id="@+id/tableRow18"
+                    android:layout_width="0dp"
+                    android:background="#FFFFFF"
+                    android:minHeight="25dp" >
+
+                    <TextView
+                        android:id="@+id/atrr"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:text="All Time Rent Range" />
+
+                    <TextView
+                        android:id="@+id/atrrV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dip"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:background="@drawable/border"
+                    android:minHeight="2dp" />
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal" />
+
+</RelativeLayout>
